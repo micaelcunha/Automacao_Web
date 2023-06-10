@@ -36,14 +36,11 @@ def webScraping():
         return bitcoin
         
 def atualizarBanco():
-    bitcoin2 = webScraping()
+    bitcoin = webScraping()
     print("\n  Atualizando banco!")
     try:
-        print('a')
-        con = mysql.connector.connect (host='localhost:3307', database='senai', user='root', password= '')
-        print('b')  
-        consulta_sql = rf"UPDATE `biticoin` SET `valor_biticoin`='{int(bitcoin2)}' where id = 1;"
-        print('c')
+        con = mysql.connector.connect (host='localhost', database='senai', user='root', password= '')
+        consulta_sql = rf"UPDATE `bitcoin` SET `valor_bitcoin`='{str(bitcoin)}' where id = 1;"
         cursor = con.cursor()
         cursor.execute(consulta_sql) 
         con.commit()

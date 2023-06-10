@@ -24,19 +24,19 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `biticoin`
+-- Estrutura da tabela `bitcoin`
 --
 
-CREATE TABLE `biticoin` (
+CREATE TABLE `bitcoin` (
   `id` int(11) NOT NULL,
-  `valor_biticoin` varchar(50) NOT NULL
+  `valor_bitcoin` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Extraindo dados da tabela `biticoin`
+-- Extraindo dados da tabela `bitcoin`
 --
 
-INSERT INTO `biticoin` (`id`, `valor_biticoin`) VALUES
+INSERT INTO `bitcoin` (`id`, `valor_bitcoin`) VALUES
 (1, '130.358,96');
 
 -- --------------------------------------------------------
@@ -62,9 +62,9 @@ INSERT INTO `clima` (`id`, `temperatura_atual`) VALUES
 --
 
 --
--- Índices para tabela `biticoin`
+-- Índices para tabela `bitcoin`
 --
-ALTER TABLE `biticoin`
+ALTER TABLE `bitcoin`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -78,9 +78,9 @@ ALTER TABLE `clima`
 --
 
 --
--- AUTO_INCREMENT de tabela `biticoin`
+-- AUTO_INCREMENT de tabela `bitcoin`
 --
-ALTER TABLE `biticoin`
+ALTER TABLE `bitcoin`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
