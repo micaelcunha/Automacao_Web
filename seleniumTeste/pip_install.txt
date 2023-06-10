@@ -1,0 +1,12 @@
+pip install selenium
+pip install webdriver_manager
+pip install mysql-connector-python
+pip install pandas
+
+ cidade brasilia
+
+ https://weather.com/pt-BR/clima/hoje/l/BRXX0043:1:BR?Goto=Redirected
+
+ cidade sao paulo
+
+ São Paulo, São Paulo, Brazil
